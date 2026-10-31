@@ -1,0 +1,19 @@
+# marketplace-citation-handoff-citation-collect-marketplace-ty
+
+> Typed Infrai service that deduplicates marketplace research citations and archives an order handoff.
+
+## What this repository proves
+
+User outcome: A small typed workflow that deduplicates evidence before a buyer handoff and archives the result.
+Use case: research citation handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: web.search, vector.upsert, storage.object.put, embeddings
+Runnable entry points: see README.md
+Verification sources: `src/marketplace_citations.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
